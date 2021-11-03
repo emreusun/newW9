@@ -15,7 +15,7 @@ import TheThumbNail from "./components/TheThumbNail.js";
             portfolioData: [],
             message: "hello from Vue",
             isVisible: false,
-            currentPortfolioItem = {}
+            //currentPortfolioItem = {}
         },
 
         methods: {
@@ -23,8 +23,8 @@ import TheThumbNail from "./components/TheThumbNail.js";
                 debugger;
                 let portHeader = document.querySelector(".port_title");
 
-                //portHeader.textContent = item.name;
-                tihs.currentPortfolioItem =item;
+                portHeader.textContent = item.name;
+                //tihs.currentPortfolioItem =item;
             },
 
             toggleLightbox() {
